@@ -1,0 +1,42 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </body>
+</html>
+<style>
+    html, body {
+        margin: 0;
+        height: 100%;
+    }
+    .container {
+        display: flex;
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        background-color: blue;
+        margin: 15px;
+        height: 80px;
+        width: calc((100% - 90px) / 3);
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 15px 0px;
+        }
+        .item {
+            width: 100%;
+            margin: 15px
+        }
+    }
+</style>
